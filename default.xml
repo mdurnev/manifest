@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <manifest>
   <remote fetch="https://github.com/Open-TEE/" name="origin" review="https://review.gerrithub.io/Open-TEE" />
+  <remote fetch="https://github.com/mdurnev/" name="mdurnev" />
   <default remote="origin" revision="master" />
   <project name="project" path="project" >
     <copyfile src="README.md" dest="README" />
@@ -12,13 +13,13 @@
     <copyfile src="install_android.sh" dest="install_android.sh" />
     <copyfile src="opentee" dest="opentee" />
   </project>
-  <project name="tee-engine-Driver" path="driver" />
-  <project name="tee-engine" path="emulator" />
-  <project name="libtee" path="libtee" />
-  <project name="libtee_pkcs11" path="libtee_pkcs11" />
-  <project name="tests" path="tests" />
-  <project name="TAs" path="TAs" />
-  <project name="CAs" path="CAs" />
-  <project name="opentee-extension-chrome" path="chrome" />
-  <project name="libomnishare" path="libomnishare" />
+  <project name="tee-engine-Driver" path="driver" revision="ab8f4af201437217a6df3164c4623c0707399cf8" />
+  <project name="tee-engine" path="emulator" remote="mdurnev" revision="afl-fuzz" />
+  <project name="libtee" path="libtee" revision="a8f00ff061716a1073b5509bb9998543cbb0324d" />
+  <project name="libtee_pkcs11" path="libtee_pkcs11" revision="6a2aec290b283aeaf8a8cb76e6e33b9c6009f608" />
+  <project name="tests" path="tests" revision="86c03676eb725b2f6f00a35b47983afc4fd41622" />
+  <project name="TAs" path="TAs" remote="mdurnev" revision="afl-fuzz" />
+  <project name="CAs" path="CAs" remote="mdurnev" revision="afl-fuzz" />
+  <project name="opentee-extension-chrome" path="chrome" revision="9291ada0e7d580b918928320648579fb35132adc" />
+  <project name="libomnishare" path="libomnishare" revision="f94383ead10a140c442b7e1130bb9e024150a2f1" />
 </manifest>
